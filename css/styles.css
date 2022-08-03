@@ -79,7 +79,6 @@ textarea {
   color: var(--accent-color);
 }
 
-
 /* Main-nav */
 .nav {
   display: flex;
@@ -130,7 +129,6 @@ textarea {
   color: var(--accent-color);
 }
 
-
 .nav__link.current {
   position: relative;
   padding-bottom: 32px;
@@ -148,8 +146,6 @@ textarea {
   left: 0;
   bottom: -1px;
 }
-
-
 
 .contacts {
   margin-left: auto;
@@ -178,7 +174,6 @@ textarea {
 .contacts .contacts__item:last-child {
   margin-right: 0px;
 }
-
 
 .contacts__mail {
   color: var(--primary-text-color);
@@ -217,9 +212,11 @@ textarea {
   max-width: 1600px;
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(to right,
+  background-image: linear-gradient(
+      to right,
       rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)),
+      rgba(47, 48, 58, 0.4)
+    ),
     url(../images/Backgroundmain.jpg);
   background-repeat: no-repeat;
   margin-left: auto;
@@ -332,8 +329,6 @@ textarea {
   border-radius: 50%;
 }
 
-
-
 /* Оформление модального окна */
 
 .form-header {
@@ -348,16 +343,13 @@ textarea {
   margin-bottom: 12px;
 }
 
-.form-field:focus-within>.form-icon {
+.form-field:focus-within > .form-icon {
   fill: var(--accent-color);
 }
-
 
 .form-field:hover .form-icon {
   fill: var(--accent-color);
 }
-
-
 
 .form-field {
   display: flex;
@@ -441,7 +433,7 @@ textarea {
   appearance: none;
 }
 
-.checkbox:checked+.vector {
+.checkbox:checked + .vector {
   fill: var(--accent-color);
   background-image: url(../images/check.svg);
   background-size: contain;
@@ -501,10 +493,6 @@ textarea {
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
-
-
 
 /* Наши преимущества */
 
@@ -626,7 +614,6 @@ textarea {
   bottom: 0;
 }
 
-
 /* Наша команда */
 
 .team {
@@ -716,7 +703,6 @@ textarea {
 .social-icon {
   fill: currentColor;
 }
-
 
 /* Постоянные клиенты */
 .clients-title {
@@ -858,8 +844,6 @@ textarea {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-
 /* Раздел Присоединяйтесь */
 
 .join {
@@ -904,8 +888,6 @@ textarea {
 .join-link:focus {
   background-color: var(--accent-color);
 }
-
-
 
 /* Підпишіться на розсилку */
 
@@ -954,7 +936,6 @@ textarea {
   padding-left: 16px;
 }
 
-
 .subscribe-button {
   margin-left: 12px;
   min-width: 200px;
@@ -978,14 +959,7 @@ textarea {
   color: #ffffff;
 }
 
-
-
 /* ПОРТФОЛИО */
-
-/* Шапка */
-.portfolio-header {
-  background-color: var(--main-white-color);
-}
 
 /* Кнопки */
 
@@ -1006,6 +980,19 @@ textarea {
   margin: -1px;
 }
 
+.filter-list {
+  list-style: none;
+
+  margin-bottom: 50px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.filter-item {
+  margin-right: 8px;
+}
+
 .filter-btn {
   padding: 6px 22px;
   font-family: inherit;
@@ -1024,19 +1011,6 @@ textarea {
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter-list {
-  list-style: none;
-
-  margin-bottom: 50px;
-
-  display: flex;
-  justify-content: center;
-}
-
-.filter-item {
-  margin-right: 8px;
-}
-
 .filter-btn:hover,
 .filter-btn:focus {
   color: var(--main-white-color);
@@ -1045,7 +1019,7 @@ textarea {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/* Примеры работ */
+/* Портфолио */
 
 /* Синий overlay */
 .overlay-box {
@@ -1053,8 +1027,8 @@ textarea {
   overflow: hidden;
 }
 
-.projects-link:hover .overlay,
-.projects-link:focus .overlay {
+.portfolio-link:hover .overlay,
+.portfolio-link:focus .overlay {
   transform: translateY(0);
 }
 
@@ -1092,7 +1066,7 @@ textarea {
 
 /* Портфолио */
 
-.portfolio {
+.portfolio-title {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -1105,23 +1079,7 @@ textarea {
   margin: -1px;
 }
 
-.projects-item {
-  width: 370px;
-}
-
-.projects-link {
-  display: block;
-  text-align: initial;
-}
-
-.projects-link:hover,
-.projects-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-  outline: none;
-}
-
-.projects {
+.portfolio-list {
   list-style: none;
   gap: 30px;
 
@@ -1129,20 +1087,36 @@ textarea {
   flex-wrap: wrap;
 }
 
-.project-text {
-  border: 1px solid #eeeeee;
-  border-top: none;
-  padding: 20px 24px;
+.portfolio-list__item {
+  width: 370px;
 }
 
-.project-background {
+.portfolio-link {
+  display: block;
+  text-align: initial;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  outline: none;
+}
+
+.portfolio-img {
   display: block;
   max-width: 100%;
   height: auto;
   position: relative;
 }
 
-.project-name {
+.portfolio-text {
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding: 20px 24px;
+}
+
+.portfolio-text-title {
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -1151,7 +1125,7 @@ textarea {
   letter-spacing: 0.06em;
 }
 
-.project-filter {
+.portfolio-text-item {
   color: var(--primary-text-color);
 
   margin-top: 4px;
