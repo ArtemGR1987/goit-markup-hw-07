@@ -31,17 +31,6 @@ p {
   margin-bottom: 0px;
 }
 
-.container {
-  margin: 0 auto;
-  width: 1200px;
-  padding: 0 15px;
-  outline: 2px solid tomato;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 .list {
   list-style: none;
@@ -58,6 +47,17 @@ textarea {
   resize: none;
 }
 
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  padding: 0 15px;
+  outline: 2px solid tomato;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /*цвет основного текста #212121/
 /*вторичный цвет текста #757575*/
 

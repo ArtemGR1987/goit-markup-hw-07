@@ -1,5 +1,28 @@
+// Utils styles  Основные цвета
 @import './utils/variables';
-@import './base/resetstyles';
+
+// Base styles 
+@import './base/_base';
+@import './base/reset';
+
+// Components styles;
+@import './components/container';
+@import './components/section';
+@import './components/logo';
+@import './components/main-navigation-menu';
+@import './components/solutions';
+@import './components/solution-button';
+@import './components/modal-window';
+@import './components/modal-window-button';
+@import './components/advantages';
+@import './components/work-examples';
+@import './components/team';
+@import './components/clients';
+@import './components/footer';
+
+
+
+// Layout styles 
 
 
 
